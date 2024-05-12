@@ -3,16 +3,16 @@
 
 ## issues and fix
 
-### resize disk (if you SD card is bigger then 8G)
+### Resize disk (if you SD card is bigger then 8G)
 ```angular2html
 sudo wget https://raw.githubusercontent.com/canonical/cloud-utils/main/bin/growpart -P /usr/local/bin/
 sudo chmod +x /usr/local/bin/growpart
 sudo growpart /dev/mmcblk1 2
 sudo resize2fs /dev/mmcblk1p2
 ```
-### set NTP
+### Set NTP
 
-### set prob speed
+### Set prob speed
 the prob speed it too high update "speed: 2.0" to "speed: 0.5" under [probe]
 prob speed at 2.0 
 ```
@@ -41,11 +41,11 @@ probe accuracy results: maximum 2.527500, minimum 2.512500, range 0.015000, aver
 probe accuracy results: maximum 2.530000, minimum 2.512500, range 0.017500, average 2.525750, median 2.527500, standard deviation 0.005006
 ```
 
-### save your UPS 
+### Save your UPS 
 the Magneto-X power kill my USP do to the amp drow you can workaround it but update the speed the hotbed heat up
 just add "max_power: 0.7" to [heater_bed]
 
-### update your cancel_print macro
+### Update your cancel_print macro
 The "cancel_print" just stops the print to make it more useful. Add the following to your macros.cfg
 ```
 [gcode_macro CANCEL_PRINT]
