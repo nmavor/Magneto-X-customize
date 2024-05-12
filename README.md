@@ -31,12 +31,26 @@ probe accuracy results: maximum -0.078750, minimum -0.090000, range 0.011250, av
 probe accuracy results: maximum -0.078750, minimum -0.088750, range 0.010000, average -0.084000, median -0.084375, standard deviation 0.003482
 probe accuracy results: maximum -0.078750, minimum -0.091250, range 0.012500, average -0.083875, median -0.082500, standard deviation 0.004163
 ```
-as you can see if you drop the speed to 0.5  standard deviation drop from 0.015342~0.013328 to 0.003758~0.004163
-as reference prob using klicky on voron 2.4
+as you can see, if you drop the speed to 0.5  standard deviation drop from 0.015342~0.013328 to 0.003758~0.004163
+as a reference prob, using klicky on voron 2.4
 ```
 probe accuracy results: maximum 2.520000, minimum 2.507500, range 0.012500, average 2.517000, median 2.517500, standard deviation 0.003674
 probe accuracy results: maximum 2.522500, minimum 2.510000, range 0.012500, average 2.520250, median 2.522500, standard deviation 0.003783
 probe accuracy results: maximum 2.527500, minimum 2.512500, range 0.015000, average 2.524750, median 2.526250, standard deviation 0.004395
 probe accuracy results: maximum 2.527500, minimum 2.512500, range 0.015000, average 2.524750, median 2.526250, standard deviation 0.004395
 probe accuracy results: maximum 2.530000, minimum 2.512500, range 0.017500, average 2.525750, median 2.527500, standard deviation 0.005006
+```
+
+### save your UPS 
+the Magneto-X power kill my USP do to the amp drow you can workaround it but update the speed the hotbed heat up
+just add "max_power: 0.7" to [heater_bed]
+
+### update your cancel_print macro
+The "cancel_print" just stops the print to make it more useful. Add the following to your macros.cfg
+```
+[gcode_macro CANCEL_PRINT]
+description: Cancel the actual running print
+rename_existing: CANCEL_PRINT_BASE
+gcode:
+  PRINT_END
 ```
