@@ -32,7 +32,7 @@ probe accuracy results: maximum -0.078750, minimum -0.090000, range 0.011250, av
 probe accuracy results: maximum -0.078750, minimum -0.088750, range 0.010000, average -0.084000, median -0.084375, standard deviation 0.003482
 probe accuracy results: maximum -0.078750, minimum -0.091250, range 0.012500, average -0.083875, median -0.082500, standard deviation 0.004163
 ```
-as you can see, if you drop the speed to 0.5  standard deviation drop from 0.015342~0.013328 to 0.003758~0.004163
+as you can see, if you drop the speed to 0.5  standard deviation drop from 0.015342 ~ 0.013328 to 0.003758 ~ 0.004163
 as a reference prob, using klicky on voron 2.4
 ```
 probe accuracy results: maximum 2.520000, minimum 2.507500, range 0.012500, average 2.517000, median 2.517500, standard deviation 0.003674
