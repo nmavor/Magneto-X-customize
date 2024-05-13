@@ -10,8 +10,9 @@ sudo chmod +x /usr/local/bin/growpart
 sudo growpart /dev/mmcblk1 2
 sudo resize2fs /dev/mmcblk1p2
 ```
+if you using update OS (1.1.0 and up) you can run "RESIZE_FILESYSTEM" in the klipper console to do the same
 ### Set NTP
-
+you will need to set the time zone by running sudo orangepi-config and in the menu under Personal select your timezone
 ### Set prob speed
 the prob speed it too high update "speed: 2.0" to "speed: 0.5" under [probe]
 prob speed at 2.0 
