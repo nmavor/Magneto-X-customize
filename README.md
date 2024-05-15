@@ -57,7 +57,7 @@ gcode:
 ```
 
 ### Pi fan temp
-on day to day my Pi is sit on 55~57c so the Electronics fan kick every 5~10 years the "fix" was to update the fan to work on 60c
+on day to day my Pi is sit on 55-57c so the Electronics fan kick every 5110 years the "fix" was to update the fan to work on 60c
 ```angular2html
 [temperature_fan pi]
 # Electronics fan PWM
