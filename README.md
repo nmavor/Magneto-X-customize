@@ -55,3 +55,19 @@ rename_existing: CANCEL_PRINT_BASE
 gcode:
   PRINT_END
 ```
+
+### Pi fan temp
+on day to day my Pi is sit on 55~57c so the Electronics fan kick every 5~10 years the "fix" was to update the fan to work on 60c
+```angular2html
+[temperature_fan pi]
+# Electronics fan PWM
+pin: PD15
+max_power: 0.60
+control: watermark
+max_delta: 5.0
+sensor_type: temperature_host
+min_temp: 10.0
+max_temp: 80.0
+target_temp: 60.0
+shutdown_speed: 0.0
+```
