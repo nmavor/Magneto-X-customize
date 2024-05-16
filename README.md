@@ -71,3 +71,25 @@ max_temp: 80.0
 target_temp: 60.0
 shutdown_speed: 0.0
 ```
+
+### speed up QGL
+after you pass the first QGL and the bed is close to be good you can drop horizontal_move_z from 20 to 5 
+it will cut 1-2Min from QGL 
+```angular2html
+[quad_gantry_level]
+gantry_corners:
+  0,0
+  290,390
+
+points:
+  25,25
+  25,380
+  290,380
+  290,25
+
+speed: 250
+horizontal_move_z: 5.0
+retries: 3
+retry_tolerance: 0.025
+max_adjust: 50
+```
