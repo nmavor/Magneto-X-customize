@@ -53,7 +53,10 @@ The "cancel_print" just stops the print to make it more useful. Add the followin
 description: Cancel the actual running print
 rename_existing: CANCEL_PRINT_BASE
 gcode:
-  PRINT_END
+    CLEAR_PAUSE
+    SDCARD_RESET_FILE
+    PRINT_END
+    BASE_CANCEL_PRINT
 ```
 
 ### Pi fan temp
