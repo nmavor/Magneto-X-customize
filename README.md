@@ -72,6 +72,14 @@ target_temp: 60.0
 shutdown_speed: 0.0
 ```
 
+### add MCU temp 
+to add the MCU temp add the follow to printer.cfg 
+```angular2html
+[temperature_sensor mcu_temp]
+sensor_type: temperature_mcu
+min_temp: 0
+max_temp: 100
+```
 ### speed up QGL
 after you pass the first QGL and the bed is close to be good you can drop horizontal_move_z from 20 to 5 
 it will cut 1-2Min from QGL 
