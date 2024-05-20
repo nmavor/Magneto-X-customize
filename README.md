@@ -46,7 +46,7 @@ probe accuracy results: maximum 2.530000, minimum 2.512500, range 0.017500, aver
 the Magneto-X power kill my USP do to the amp drow you can workaround it but update the speed the hotbed heat up
 just add "max_power: 0.7" to [heater_bed]
 
-### Update your cancel_print macro
+### Update your cancel_print macro (before 1.1.3)
 The "cancel_print" just stops the print to make it more useful. Add the following to your macros.cfg
 ```
 [gcode_macro CANCEL_PRINT]
