@@ -83,6 +83,17 @@ sensor_type: temperature_mcu
 min_temp: 0
 max_temp: 100
 ```
+
+### add MAG_TOOL temp
+to add the MAG_TOOL MCU temp add the follow to printer.cfg 
+```angular2html
+[temperature_sensor mag_tool_temp]
+sensor_type: temperature_mcu
+sensor_mcu: MAG_TOOL
+min_temp: 0
+max_temp: 100
+```
+
 ### speed up QGL
 after you pass the first QGL and the bed is close to be good you can drop horizontal_move_z from 20 to 5 
 it will cut 1-2Min from QGL 
