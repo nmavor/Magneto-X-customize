@@ -115,3 +115,6 @@ retries: 3
 retry_tolerance: 0.025
 max_adjust: 50
 ```
+
+### webcam framerate
+the webcan is hard code to use 10 FPS you can turn it up to 20~25 easy by edit crowsnest.conf and set max_fps to 25
